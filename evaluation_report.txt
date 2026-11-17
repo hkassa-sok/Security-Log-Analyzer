@@ -1,0 +1,34 @@
+PASS: Normal successful login
+  Expected: none
+  Actual: none
+PASS: Two failures below threshold
+  Expected: none
+  Actual: none
+PASS: Failures spread beyond five minutes
+  Expected: none
+  Actual: none
+PASS: Three failures within five minutes
+  Expected: repeated_failures
+  Actual: repeated_failures
+PASS: Success after failures for same user
+  Expected: repeated_failures, success_after_failures
+  Actual: repeated_failures, success_after_failures
+PASS: Success for a different user
+  Expected: repeated_failures
+  Actual: repeated_failures
+
+EVALUATION SUMMARY
+==================
+Scenarios matching expectations: 6/6
+Correct rule detections (TP): 4
+Unexpected rule detections (FP): 0
+Missed rule detections (FN): 0
+Correct rule non-detections (TN): 8
+Precision: 100.0%
+Recall: 100.0%
+
+Scope: Six synthetic scenarios and two rule types.
+Each scenario/rule pair is one evaluation decision.
+Repeated alerts of the same type are not evaluated separately.
+These examples are known development cases, not an independent test set.
+Results do not establish real-world detection accuracy.
