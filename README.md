@@ -1,6 +1,6 @@
 # SSH Authentication Log Analyzer
 
-A student cybersecurity project that analyzes SSH password authentication
+A cybersecurity project that analyzes SSH password authentication
 logs, flags suspicious patterns, and generates text or JSON reports.
 
 Built with Python's standard library. No external packages are required.
